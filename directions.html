@@ -1,0 +1,153 @@
+<title>Surprise! Directions</title>
+<h1  id = "title" align = center>Surprise! (EN1 Project 10) - Directions</h1> 
+<h2 align = center>Matthew Wong and Gabriel Sessions</h2> <br>
+<p align = center>Note: Directions are subject to change depending on code changes</p>
+
+<style>
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #website_button{
+       
+      
+      
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+
+    #website_button:hover {
+      background-color: #000;
+    }
+
+    .border{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .listText{
+        font-size: 16px;
+    }
+
+
+    </style>
+    </head>
+    <body>
+      <center><button align = center class = "website_button" onclick = "window.location.href = './documentation.html'">Back to documentation</button></center>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function changeColor (){
+      document.getElementById("title").style.color = Math.floor(Math.random()*16777215).toString(16);
+    }
+    changeColor();
+    </script>
+
+
+
+<div id = "setup" class = "border">
+    <h2>Project Set Up</h2>
+</div>
+<div id = "setupList" class = "border" >
+    <h4>What you'll need from two (2) LEGO SPIKE Prime Kits:</h4>
+    <ul>
+        <li>Two (2) SPIKE Prime Hubs</li>
+        <li>Four (4) Medium Motors</li>
+        <li>One (1) Large Motor</li>
+        <li>One (1) Force Sensor</li>
+        <li>Two (2) Distance Sensors</li>
+        <li>One (1) Computer with the ability to run Google Chrome</li>
+        <li>Recommended: One (1) or two (2) Micro USB to USB-A Cable(s)</li>
+    </ul>
+</div>
+
+<br>
+
+<div id = "step1" class = "border">
+    <h2>Step 1: Wiring</h2>
+    Before we start tackling the features on the website, let's figure out how to wire the hubs and sensors correctly! If you do not connect the correct sensors to the corresponding ports on the wiring diagrams, errors could arise.
+    <ul>
+        <li>Start by wiring Hub 1. Refer to the images below for the correct sensor configurations and placements relative to the various mechanical components of the robot.</li>
+        <li>*Pay careful attention to the small motors, order DOES matter!</li>
+        <li>When finished with Hub 1, use the second diagram to wire Hub 2</li>
+        <li>You are not required to connect either hub to the computer via the Micro USB to USB-A cable if you wish to connect via bluetooth. For our project, Hub 2 needs to be connected by a cable since the bluetooth functionality of the second hub is inconsistent.</li>
+    </ul>
+</div>
+
+<center><div  id = "hub1" class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-10-25T02:08:40.012Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36\&quot; etag=\&quot;-FX0kUD0ZWLltziczlR7\&quot; version=\&quot;15.5.9\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;ajgAbhyCTBuViU4noxfG\&quot; name=\&quot;Page-1\&quot;&gt;5Vpbc9o6EP41PLaD5Rs8EiDNzGnmZA4PaR+FLduayBZHFgH66yv5gm3JTt0WAwMzmSCtbtb3rXZXa4/Mebz/wuAmeqY+IiMw9vcjczECwDAdU/xIySGXOMDKBSHDftGpEqzwD1QIx4V0i32UNjpySgnHm6bQo0mCPN6QQcbortktoKS56gaGSBOsPEh06Sv2eZRLJ/a4kj8hHEblysa4aIlh2bkQpBH06a4mMpcjc84o5Xkp3s8RkeCVuOTjHjtajw/GUML7DAhewWG6Np/Jk7d8B+/sRxLYn0A+yzsk22LDxcPyQ4kAo9vER3KS8ch82EWYo9UGerJ1JzgXsojHRNQMUSymQ4yjfedzGsfdC7VBNEacHUSXYgCY2vmQQmPsEtFdhT8o8Y9q2JulzsCC8/A4dwWLKBTI/AZKpobSaoPfkBC9MBzL36ftWvw3NPAEDLyJUMoZfUNzSigTkoQmoudDgAlRRJDgMBFVT8CGhPxBgoqFYs6Khhj7vlymlZImaSdgxXQnTVYsnZWJ3ULKUJxYGicvlHEhmd0wCWPlaEx0Epy2kzEUCXYXCfP7IcGxL0yC00XC8n5IcMGFSXC7SHi4XRIs98rM0aSLhMX9kHBxczTtIuHxfkhwDfuyJBh6yPoVBZKFVQyz4c+UC0C7g33jLMG+akFaokqrBbfJYLjpYeVXyEJ0NYA5dhMxq8XmGqAFMmcwyPQg8L9s2WvTNcO4NmXrcftGiT+TaQxp6whMU+w1cWmaMrTH/Fut/F2WP9tFbbGvNS0OZSURe/lWdZTV78XsWaUaltXKcfmjIl/Lnyh8iO3QLfPQB0AUvHB50vgvVU0nuEZgW2KglDFEIMfvzedtY7VY4YXihNeMvHL0XFUx8n0Wo+qZGGUiWw1eVTeQA6FNlCnZcdt/oXf6jeE+9c7pq3fmNemdo6rLn+qdrSrw0HqnX5I0vUsjuJFFjxIBWlcAN2gQYjm6X5ic1S/o95jlnosTCddERiIzFmu43UwobZhqgHPhULoMpvpoLQ2CFxgK0LOXERLlX6kvo1zYBipxFryfCENH0Wgw7afRxnQwEI2Tu5w/dB+lqzIargp87KtO6HPcvj7HuiqfA07lc9zz+pxSz+rvbnY4CcWfkP6T4ADdri11lBuP1fIq7by2VE9L/K0ZaI08z3ecwTWdUlc9XH1PKVCdrpotGPqU6mmXRyqBl2bHIfI0rpkohbK0Qknalk6IaLzepudJJSjvqM2WLMxZQ0agJ2EWOOUwyTDsQKyMWjaMeijtgdwaem9hdv7+3XKCpckbKq/ltpiq8+a1wGC35Gbo0feWXA9yajHP8Lfkac+IBVxVdsaxThWxqEHx0Law7Zac28CAZg9aKaDz/5aWDZ/S7OOpmehgTTb7qrG0m6+Y5VHPAsOQQXGHHAfSKow7P2bJVxW7yBfOp7ndcAkYqg3STJDVZoKO33z9hg0S1erTr1x1qg/ozOVP&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div> </center>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+<br><br>
+<center><div id = "hub2" class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-10-25T05:40:40.605Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36\&quot; etag=\&quot;_eh7m20O2DUPqtCRy3UP\&quot; version=\&quot;15.5.9\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;ajgAbhyCTBuViU4noxfG\&quot; name=\&quot;Page-1\&quot;&gt;5VrZcqM4FP0aP6YLxGL86K2TqerMpNsP6TxNySBjVQAxQrZxf/1ILGaRqCaJabviqlSMrlbOuffoIhgZ8zC9pzDePhIPBSOgeenIWIwA0DUARuJP8465xbSd3OBT7BWNKsMK/0Jlz8K6wx5KGg0ZIQHDcdPokihCLmvYIKXk0Gy2IUFz1hj6SDKsXBjI1mfssW1udSytsj8g7G/LmXWtqAlh2bgwJFvokUPNZCxHxpwSwvKrMJ2jQIBX4pL3+9pRe1oYRRHr02HzDI6TtfEYPLjLPdjTX9HGuivY2cNgV9xwsVh2LBGgZBd5SAyijYzZYYsZWsXQFbUHzjm3bVkY8JLOL+VFFevcI8pQWjMVi7xHJESMHnmTohZMrLxL4THGpADwUOEPSvy3NeyN0mdgwbl/GruChV8UyLwBJUNCaRXjV8RNTxSH4vdht+b/ZfD4PbMmQgmj5BXNSUAot0Qk4i1nGxwELRMMsB/xosuRRNw+Ewhi7pjToiLEniemUVLSJO0MrBhjp8GKacisOJaClKE4MSVOnghl3DL9xCRozdAwxzIJtioyhiLB6iJhfjskWOaFSbC7SFjeDgm2fmESxl0kzD4vCeb4yuTI6SJhcTskXFyOJl0kfL0dEuxSni5Fgi6nrN/QRrCwCmHW/ZEwDmh3sq//kWS/rSCKrNJU4OYMhpuc0fzIpr024HT92pDr8SiJIm8qnslF4AYwSbDbxKUZlyjF7Gft+kVcf7GK0iKtVS2OZSHi9/KzaiiKL8XoWaHqlpXKfp2MJGRHXfT7FJhB6iPWw7OQ1zhwkAmuEah6yi1tFAWQ4X3zmELFajHDE8ERqymW1VKsccsx8hsvetWPFVoDWe1MDLQGypGRBsqc7HTbH/A7Of29Cb+z+/qdcdV+Z7Xd5b1+Z7YdeGi/kzN+ye+SLYzFpUsCDlpXNjLojmpY8r7g/NF9QU7KlynjEQnXgTg5m9Jw9KlPznSjxcj4wrkhkHOcBU4YjFzBxwpFiSK/KV05psRFSfJ7V15D99XPwPxnxwIsmDmXi9ttDVGcEOtAAak9GKSDbUL6uzah+hZU25HOvglNem5C4LqTH6sda+/ehNoyOvAmBFSbkB0I4dyQbKGVA9r/7UhZcZdkL9qmvIHpxGlVya988fuMKY58Xr3A0KdQSPRGqILW+eIjn5XfRT5xPsznVXXQev5SHH2ZKgk6vR/8iAaZL3aK9e//3m0O2t/3a2fz7a/vd7rCFc6TB59k55TRdkqQMszfpy1A1hblfYOLKklJ50cfo8xJcyCn7SfnU5JuFBveMydhvBOhJqUCBxwGMAvKjqhREN4ZSFYrYR0rElagKRgEg0WSfHa2TJHLseDGOfFQKXZrWurcD7QW7/G5PB4ThkK5wYrTJ+qzw6NErl8y90sPsewvghRxic9S7DwwY+E4GVDWbGQtxFg7RvJt4E063IvytwRq2gzIbj3VVV5wjpROuVr5/fIFMrozyum4p5xaF5VT0PQCs/1JR185te3mQMZwiVk3iu2HXgpF4pS/DFnFhF11dvQhUbeNFvz2YM+8vFh9Q5XTV32JZiz/Bw==&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div></center>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+<div id = "step2" class = "border">
+    <h2>Step 2: Code Prep</h2>
+    <ul>
+        <li>If any last code changes need to be made, do so using AWS IAM user <i><u>en1</u></i> in the bucket <u>haunted-house-en1</u></i></li>
+        <li>Navigate to the <a href = "https://haunted-house-en1.s3.amazonaws.com/main.html">central website</a> where our JS code will be running. If you just modified the bucket contents, you may need to reload the page.</li>
+        <li>Scroll down and click on the "show diagnostics" button. A menu should pop up.</li>
+        <li>Connect Hub 1 to the Hub 1 service dock (the button with the red dot) and Hub 2 to the Hub 2 service dock</li>
+        <li>Once Hub 1 is connected, a list of sensors should appear on the dashboard. If you would like, you can test some of the sensors.</li>
+    </ul>
+</div>
+
+<div id = "step2" class = "border">
+    <h2>Step 3: Running the Project</h2>
+    <ul>
+        <li>Complete any last mechanical/safety checks. Make sure the robot is in a stable position before running.</li>
+        <li>When ready, press the execute code button on the sensor dashboard.</li>
+        <li>If you need to stop the program for any reason, press the stop code button or reboot hub button (if stop button doesn't work).</li>
+        <li>You can hide the dashboard when presenting the project by clicking on the hide diagnostics button.</li> 
+        
+    </ul>
+</div>
+
+
+
+<br><br><br><br>
+

@@ -1,0 +1,53 @@
+.buttonOn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonOff {
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    align-content: center;
+}
+
+.box{
+    background: ghostwhite; 
+    width: 40%;
+    height: auto;
+    font-size: 20px; 
+    padding: 10px; 
+    border: 1px solid lightgray; 
+    margin: auto;
+    
+}
+
+.funButton {
+    background-color: orange; 
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
